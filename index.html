@@ -14,7 +14,7 @@
     }
 
     body {
-      background: url('https://images.pexels.com/photos/18945828/pexels-photo-18945828.jpeg') no-repeat center center fixed;
+      background: url('https://images.pexels.com/photos/7717505/pexels-photo-7717505.jpeg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Rakkas', serif;
       color: white;
@@ -30,24 +30,23 @@
       font-size: 5.5rem;
       letter-spacing: 2px;
       margin-bottom: -.4em;
+
     }
 
     h2 {
       font-size: 2.8rem;
       letter-spacing: 1px;
-      margin-bottom: 0=-.6em;
+      margin-bottom: 0=-.4em;
     }
-   h3 {
-      font-size: 4.8rem;
-      letter-spacing: 1px;
-      margin-bottom:-.4em;
-    }
+
+
     p {
       font-size: 1.8rem;
-      color: black;
+      color: white;
       margin: 1em auto;
       max-width: 500px;
-      line-height: 1em;
+      line-height: 1.5em;
+     
     }
 
     .crystal-ball {
@@ -95,25 +94,23 @@
   </style>
 </head>
 <body>
-  <h1>THE STAR</h1>
-  <h2>PROGRAM</h2>
-  <h3>ORACLE</h3>
+  <h1>THE STAR</h1><h2>PROGRAM</h2><h1>ORACLE</h1>
 
-  <p>A guide for those who seek to bestow<br>gratitude onto others.</p>
-  <p>What shining aura of recognition do<br>you possess?</p>
+  <p>Explore the symbols left by a well-filled cup.
+  The leaves do not predict, they reveal.</p>
 
-  <button class="reveal-btn" onclick="showRandomImage()">REVEAL NOW</button>
+  <button class="reveal-btn" onclick="showRandomImage()">Examine your cup</button>
 
   <div id="result"></div>
 
   <script>
     function showRandomImage() {
       const images = [
-        "https://i.imgur.com/bEva2Eh.png",
-        "https://i.imgur.com/ssGmx9Z.png",
-        "https://i.imgur.com/cBjGqJ0.png",
-        "https://i.imgur.com/CnBP02L.png",
-        "https://i.imgur.com/5FiL0bV.png"
+        "https://i.imgur.com/oRPN0ah.jpeg",
+        "https://i.imgur.com/9l2SqX2.jpeg",
+        "https://i.imgur.com/Ip6YW0R.jpeg",
+        "https://i.imgur.com/KGLyD5L.jpeg",
+        "https://i.imgur.com/u7cwDH3.jpeg"
       ];
       const randomImg = images[Math.floor(Math.random() * images.length)];
       document.getElementById("result").innerHTML = 
