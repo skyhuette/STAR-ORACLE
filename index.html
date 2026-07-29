@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Star Program</title>
+  <!-- Add Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('https://images.pexels.com/photos/18945828/pexels-photo-18945828.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Rakkas', serif;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 5.5rem;
+      letter-spacing: 2px;
+      margin-bottom: -.4em;
+    }
+
+    h2 {
+      font-size: 2.8rem;
+      letter-spacing: 1px;
+      margin-bottom: 0=-.6em;
+    }
+   h3 {
+      font-size: 4.8rem;
+      letter-spacing: 1px;
+      margin-bottom:-.4em;
+    }
+    p {
+      font-size: 1.8rem;
+      color: black;
+      margin: 1em auto;
+      max-width: 500px;
+      line-height: 1em;
+    }
+
+    .crystal-ball {
+      margin: 1.5em 0;
+    }
+
+    .custom-link {display: inline-block;
+      padding: 7px 15px;
+      background-color: #00A451;
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      border-radius: 35px;
+      transition: background-color 0.2s ease;
+    }
+ .custom-link:hover {
+      background-color: #000000;
+ }
+    .reveal-btn {
+      background: #006633;
+      color: white;
+      padding: 12px 36px;
+      border-radius: 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .reveal-btn:hover {
+      background: #00994d;
+    }
+
+    #result {
+      margin-top: 30px;
+    }
+
+    #result img {
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <h1>THE STAR</h1>
+  <h2>PROGRAM</h2>
+  <h3>ORACLE</h3>
+
+  <p>A guide for those who seek to bestow<br>gratitude onto others.</p>
+  <p>What shining aura of recognition do<br>you possess?</p>
+
+  <button class="reveal-btn" onclick="showRandomImage()">REVEAL NOW</button>
+
+  <div id="result"></div>
+
+  <script>
+    function showRandomImage() {
+      const images = [
+        "https://i.imgur.com/bEva2Eh.png",
+        "https://i.imgur.com/ssGmx9Z.png",
+        "https://i.imgur.com/cBjGqJ0.png",
+        "https://i.imgur.com/CnBP02L.png",
+        "https://i.imgur.com/5FiL0bV.png"
+      ];
+      const randomImg = images[Math.floor(Math.random() * images.length)];
+      document.getElementById("result").innerHTML = 
+        `<img src="${randomImg}" alt="Your aura">`;
+    }
+  </script>
+  <br>
+   <a href="https://ulnfp.sharepoint.com.mcas.ms/sites/GRPNAStandardsDivision/SitePages/StakeholderAwardsProgram.aspx" class="custom-link" target="_blank">Visit STAR Awards Page</a
+<br>
+</body>
+</html>
