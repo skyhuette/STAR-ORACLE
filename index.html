@@ -27,17 +27,23 @@
     }
 
     h1 {
-      font-size: 5.5rem;
+      font-size: 5.2rem;
       letter-spacing: 2px;
-      margin-bottom: -.4em;
+      margin-bottom: -.3em;
 
     }
 
     h2 {
-      font-size: 2.8rem;
+      font-size: 2.6rem;
       letter-spacing: 1px;
-      margin-bottom: 0=-.4em;
+    
     }
+    
+    h1, h2 {
+  margin: 0;
+  padding: 0;
+  line-height: .85;
+}
 
 
     p {
@@ -55,7 +61,7 @@
 
     .custom-link {display: inline-block;
       padding: 7px 15px;
-      background-color: #00A451;
+      background-color: #123a28;
       color: white;
       text-decoration: none;
       font-family: Arial, sans-serif;
@@ -81,6 +87,7 @@
     .reveal-btn:hover {
       background: #00994d;
     }
+   
 
     #result {
       margin-top: 30px;
@@ -91,15 +98,16 @@
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(255,255,255,0.6);
     }
+    
+   
   </style>
 </head>
 <body>
   <h1>THE STAR</h1><h2>PROGRAM</h2><h1>ORACLE</h1>
 
-  <p>Explore the symbols left by a well-filled cup.
-  The leaves do not predict, they reveal.</p>
+  <p>Explore the signs left by a well-filled cup.</p>
 
-  <button class="reveal-btn" onclick="showRandomImage()">Examine your cup</button>
+  <button class="reveal-btn" onclick="showRandomImage()">Examine the leaves</button>
 
   <div id="result"></div>
 
@@ -110,12 +118,16 @@
         "https://i.imgur.com/9l2SqX2.jpeg",
         "https://i.imgur.com/Ip6YW0R.jpeg",
         "https://i.imgur.com/KGLyD5L.jpeg",
+        "https://i.imgur.com/4PUd5lu.png",
+        "https://i.imgur.com/gN1YzJe.png",
         "https://i.imgur.com/u7cwDH3.jpeg"
       ];
       const randomImg = images[Math.floor(Math.random() * images.length)];
       document.getElementById("result").innerHTML = 
         `<img src="${randomImg}" alt="Your aura">`;
     }
+    
+    
   </script>
   <br>
    <a href="https://ulnfp.sharepoint.com.mcas.ms/sites/GRPNAStandardsDivision/SitePages/StakeholderAwardsProgram.aspx" class="custom-link" target="_blank">Visit STAR Awards Page</a
