@@ -17,7 +17,7 @@
       background: url('https://images.pexels.com/photos/7717505/pexels-photo-7717505.jpeg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Rakkas', serif;
-      color: white;
+      color: #A89057;
       text-align: center;
       min-height: 100vh;
       display: flex;
@@ -48,17 +48,28 @@
 
     p {
       font-size: 1.8rem;
-      color: white;
-      margin: 1em auto;
+      color: #F2F0E2;
+      margin: .5em auto;
       max-width: 500px;
       line-height: 1.5em;
      
     }
-
-    .crystal-ball {
-      margin: 1.5em 0;
+    
+     p1 {
+      font-size: 1.3rem;
+      color: white;
+      margin: .5em auto;
+      max-width: 500px;
+      line-height: 1.3em;
+     
     }
 
+.teacup-image {
+  width: 260px;
+  max-width: 80vw;
+  margin: 2px 0;
+  display: block;
+}
     .custom-link {display: inline-block;
       padding: 7px 15px;
       background-color: #123a28;
@@ -72,7 +83,7 @@
       background-color: #000000;
  }
     .reveal-btn {
-      background: #006633;
+      background: #A89057;
       color: white;
       padding: 12px 36px;
       border-radius: 40px;
@@ -85,7 +96,7 @@
     }
 
     .reveal-btn:hover {
-      background: #00994d;
+      background: #000000;
     }
    
 
@@ -105,7 +116,15 @@
 <body>
   <h1>THE STAR</h1><h2>PROGRAM</h2><h1>ORACLE</h1>
 
-  <p>Explore the signs left by a well-filled cup.</p>
+<p>A message, a sign, a considersation to take, waits at the bottom of your teacup.</p>
+
+<img id="teacup-image"
+     src="https://i.imgur.com/cWAjQag.png"
+     alt="Tea Cup"
+     class="teacup-image">
+
+
+<button
 
   <button class="reveal-btn" onclick="showRandomImage()">Examine the leaves</button>
 
@@ -113,6 +132,7 @@
 
   <script>
     function showRandomImage() {
+    document.getElementById("teacup-image").style.display = "none";
       const images = [
         "https://i.imgur.com/oRPN0ah.jpeg",
         "https://i.imgur.com/9l2SqX2.jpeg",
